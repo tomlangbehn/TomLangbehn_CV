@@ -14,7 +14,9 @@ github: tomlangbehn
 orcid: 0000-0003-1208-4793
 googlescholar: upYmy0oAAAAJ
 aboutme: |
-  I am a marine biologist, I use models that couple the environment, ecology & evolution to understand how processes at the individual level drive ecosystems
+   I am a marine biologist with a keen interested in evolutionary ecology and global change biology, i.e., how climate change and human activities such as fisheries shape biological interactions and processes across various levels of organisation. I aim to solve real-life problems by identifying and understanding how processes at the individual level drive ecosystems. In my work, I combine mechanistic modelling often informed by theory with observation from the field. I enjoy thinking broadly and across disciplines and have a particular fascination for polar ecosystems and the ocean twilight zone.
+   
+   
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 csl: "csl/apa6-cv.csl"
 nocite: "@*"

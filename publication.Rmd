@@ -10,7 +10,7 @@
 :::
 \endgroup -->
 
-## Peer-reviewed Journal Papers
+## Articles in Peer-reviewed Journals
 
 ::: {#refs_journals}
 :::
@@ -20,7 +20,7 @@
 ::: {#refs_working_paper}
 :::
 
-## Papers in Refereed Conference Proceedings
+## Articles in Peer-reviewed Conference Proceedings
 
 ::: {#refs_proceedings}
 :::
