@@ -1,19 +1,20 @@
 ---
 graphics: yes
-name: JooYoung
-surname: Seo
+name: Tom J
+surname: Langbehn
 headcolor: 414141
 #qualifications: 
-position: "Ph.D. Candidate (ABD); RStudio Trusted Data Science Instructor"
-address: "Learning, Design, and Technology, 301 Keller Building, University Park, PA 16802, USA"
-phone: "+1 814-777-5825"
-www: jooyoungseo.com
-email: "jooyoung@psu.edu"
-twitter: seo_jooyoung
-github: jooyoungseo
-linkedin: jooyoungseo
+position: "Postdoctoral Research Fellow, Theoretical Ecology Group"
+address: "Department of Biological Sciences, University of Bergen, Norway"
+# phone: "+1 814-777-5825"
+www: bio.uib.no/te/tl/
+email: "tom.langbehn@uib.no"
+twitter: TomJasperL
+github: tomlangbehn
+orcid: 0000-0003-1208-4793
+googlescholar: upYmy0oAAAAJ
 aboutme: |
-  I am a learning scientist, data-science/software engineer, and internationally certified accessibility professional.
+  I am a marine biologist, I use models that couple the environment, ecology & evolution to understand how processes at the individual level drive ecosystems
 date: '`r format(Sys.Date(), "%B %d, %Y")`'
 csl: "csl/apa6-cv.csl"
 nocite: "@*"
@@ -30,8 +31,8 @@ bibliography_healthcare: "bib/healthcare.bib"
 bibliography_working_paper: "bib/working_paper.bib"
 bibliography_R_packages: "bib/R_packages.bib"
 bibliography_github_projects: "bib/github.bib"
-#given-name-pattern: JooYoung
-#family-name-pattern: Seo
+#given-name-pattern: Tom J
+#family-name-pattern: Langbehn
 ---
 
 ```{r setup, include=FALSE, cache = FALSE}

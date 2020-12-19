@@ -1,0 +1,428 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Tom J}{Langbehn}
+
+\position{Postdoctoral Research Fellow, Theoretical Ecology Group}
+\address{Department of Biological Sciences, University of Bergen, Norway}
+
+\email{\href{mailto:tom.langbehn@uib.no}{\nolinkurl{tom.langbehn@uib.no}}}
+\homepage{bio.uib.no/te/tl/}
+\orcid{0000-0003-1208-4793}
+\googlescholar{upYmy0oAAAAJ}
+\github{tomlangbehn}
+\twitter{TomJasperL}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{I am a marine biologist, I use models that couple the environment,
+ecology \& evolution to understand how processes at the individual level
+drive ecosystems}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+
+% Pandoc CSL macros
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {December 19, 2020}
+    {Tom J Langbehn~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\begin{cventries}
+    \cventry{Department of Biological Sciences, University of Bergen}{Research Fellow / Doctoral student (PhD)}{Bergen, Norway}{Feb 2016 - Mar 2019}{\begin{cvitems}
+\item Dissertation title:  ``Modelling limits to northward range shifts of marine organisms under climate warming''
+\item Committee members: Prof. PhD Christian Jørgensen (University of Bergen), Prof. PhD Øyvind Fiksen (University of Bergen) and Associate Prof. PhD Øystein Varpe (University Centre in Svalbard).
+\item Opponents: Prof. PhD Michael T. Burrows (Scottish Association for Marine Science, UK), PhD Xabier Irigoien (AZTI, Spain)
+\end{cvitems}}
+    \cventry{Faculty 2 Biology/Chemistry, University of Bremen}{Graduate Programme Marine Biology (M.Sc.)}{Bremen, Germany}{Oct 2013 - Oct 2015}{\begin{cvitems}
+\item Thesis title: ``Feeding success in an extreme light environment: modelling seasonal prey encounter of Arctic fish''
+\item Committee members: Prof. Dr. Wilhelm Hagen (University of Bremen) and Associate Prof. PhD Øystein Varpe (University Centre in Svalbard)
+\item Final grade: excellent
+\end{cvitems}}
+    \cventry{Faculty 5 Nature and Engineering, University of Applied Sciences Bremen}{International Degree Course in Environmental and Industrial Biology (B.Sc.)}{Bremen, Germany}{Sep 2009 - Feb 2013}{\begin{cvitems}
+\item Thesis title: ``Morphological diversity in parr of Atlantic salmon (Salmo salar L.) in Iceland''
+\item Committee members: Prof. Dr. Heiko Brunken (University of Applied Sciences Bremen) and Prof. PhD Guðrún Marteinsdóttir (University of Iceland)
+\item Final grade: excellent
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{research-experience}{%
+\section{Research Experience}\label{research-experience}}
+
+\begin{cventries}
+    \cventry{Project Manager}{Learning Math with Jupyter Notebooks}{University Park, PA}{Sep. 2020 - Present}{\begin{cvitems}
+\item Assisting Dr. Jan Reimann (Associate Professor of Mathematics) in developing accessible Jupyter Notebook systems for Math 110 (Techniques of Calculus).
+\end{cvitems}}
+    \cventry{Principal Investigator}{Online Interactions of the Blind Research Project}{University Park, PA}{May. 2019 - Present}{\begin{cvitems}
+\item Conducting quantitative ethnography research on how blind learners pursue STEM disciplines as captured through a large-scale  mailing listservs.
+\item Using data science, computational linguistics (i.e., unsupervised machine learning for text mining; natural language processing) approaches coupled with conventional ethnographic methods.
+\end{cvitems}}
+    \cventry{Project Manager}{Accessible RMarkdown Online Writer (AROW) Project, Teaching and Learning with Technology (TLT)}{University Park, PA}{May. 2018 - Present}{\begin{cvitems}
+\item Developed an accessible web application for people with dis/abilities to easily compose a high-quality scientific document based on LAMP, AJAX, R Markdown, and MathML.
+\end{cvitems}}
+    \cventry{Principal Investigator}{Accessibility of Maker Toolkits Research Project}{University Park, PA}{Jun. 2017 - Present}{\begin{cvitems}
+\item Conducting usability and design research on how to make current electronics and maker toolkits more accessible for learners with visual impairments.
+\end{cvitems}}
+    \cventry{Graduate Researcher}{Playful Learning and Inclusive Design Research Group}{University Park, PA}{Aug. 2016 - Present}{\begin{cvitems}
+\item Conducting interaction analysis and microethnographic studies for Dr. Gabriela Richard's inclusive gaming for learning and accessible makerspaces for youth with diverse background.
+\end{cvitems}}
+    \cventry{Graduate Assistant}{IT Accessibility Team, Teaching and Learning with Technology (TLT)}{University Park, PA}{Aug. 2016 - Present}{\begin{cvitems}
+\item Developing and consulting accessible HTML5/CSS3/JS webpages for Penn State University sites and learning management tools.
+\item Evaluating suitability of digital badges according to web content accessibility guidelines (WCAG) 2.0.
+\end{cvitems}}
+    \cventry{Graduate Researcher}{Avenue PM Research Group}{University Park, PA}{Sep. 2014 - May. 2016}{\begin{cvitems}
+\item Participated in Dr. Simon Hooper's grant project sponsored by the U.S. Department of Education Stepping Stones Phase II program.
+\item Improved web accessibility for deaf-blind learners by removing blockers on website platform.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{working-experience}{%
+\section{Working Experience}\label{working-experience}}
+
+\begin{cventries}
+    \cventry{Software Engineer Intern}{Rstudio PBC}{Boston, MA}{May. 2020 - Aug. 2020}{\begin{cvitems}
+\item Worked on accessibility improvement projects for Rstudio Server and Desktop IDE, Shiny and Rmarkdown.
+\item Patched Shiny's bootstrap dependencies to improve navigation of Shiny apps for screen-reader and keyboard users (alert, tooltip, popover, modal dialog, dropdown, tab Panel, collapse, and carousel elements). \href{https://github.com/rstudio/shiny/pull/2911}{(Shiny PR \#2911)}
+\item Made selectInput widget accessible by patching selectize-a11y-plugin JS library. \href{https://github.com/rstudio/shiny/pull/2993}{(Shiny PR \#2993)}
+\item Developed a way to pass dynamic alt attribute for reactive plot objects in Shiny UI. \href{https://github.com/rstudio/shiny/pull/3006}{(Shiny PR \#3006)}
+\item Made fontawesome and glyphicon readable to assistive technologies in Shiny UI. \href{https://github.com/rstudio/shiny/pull/2917}{(Shiny PR \#2917)}
+\item Developed JS code to resolve accessibility issue in highlighted code blocks of HTML output produced by Pandoc for screen reader users. \href{https://github.com/rstudio/rmarkdown/pull/1833}{(Rmarkdown PR \#1833)}
+\item Authored technical documents on \href{https://support.rstudio.com/hc/en-us/articles/360049776974-Using-RStudio-Server-in-Windows-WSL2}{how to run RStudio Server via Windows Subsystem for Linux} and \href{https://support.rstudio.com/hc/en-us/articles/360045612413-RStudio-Screen-Reader-Support}{RStudio Screen Reader Support.}
+\end{cvitems}}
+    \cventry{Co-Founder and Project Manager}{ICE Soft}{Seoul, South Korea}{Jul. 2010 - Jun. 2011}{\begin{cvitems}
+\item Co-founded and managed a start-up company to develop Android-based navigation App and assistive technology for blind people.
+\item Applied for and received a \$30,000 fund from the city of Seoul.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{refereed-journal-papers}{%
+\subsection{Refereed Journal Papers}\label{refereed-journal-papers}}
+
+\hypertarget{refs_journals}{}
+\leavevmode\hypertarget{ref-seo2019maker}{}%
+\textbf{Seo, J.} (2019). Is the maker movement inclusive of ANYONE?:
+Three accessibility considerations to invite blind makers to the making
+world. \emph{TechTrends}, \emph{63}(5), 514--520.
+\url{https://doi.org/10.1007/s11528-019-00377-3}
+
+\leavevmode\hypertarget{ref-seo2019arow}{}%
+\textbf{Seo, J.}, \& McCurry, S. (2019). LaTeX is not easy: Creating
+accessible scientific documents with r markdown. \emph{Journal on
+Technology and Persons with Disabilities}, \emph{7}, 157--171.
+
+\hypertarget{working-papers-under-revision-or-review}{%
+\subsection{Working Papers under Revision or
+Review}\label{working-papers-under-revision-or-review}}
+
+\hypertarget{refs_working_paper}{}
+\leavevmode\hypertarget{ref-dsq}{}%
+Richard, G. T., \& \textbf{Seo, J.} (accepting with minor revision).
+Able to play, ready to learn: Proposing an intersectional, critical
+dis/abilities framework for research, design and practice in video games
+and learning. \emph{Disability Studies Quarterly}.
+
+\leavevmode\hypertarget{ref-seo2021mboxr}{}%
+\textbf{Seo, J.}, \& Richard, G. T. (under review). Learning analytics
+on a large-scale email corpus with r: Descriptive, network, and machine
+learning analysis. In \emph{International conference on learning
+analytics and knowledge (lak) 2021}. Society for Learning Analytics
+Research (SoLAR).
+
+\leavevmode\hypertarget{ref-scaffold}{}%
+\textbf{Seo, J.}, \& Richard, G. T. (under review). SCAFFOLDing all
+abilities into makerspaces: Universal design framework for accessible
+maker movement. \emph{Journal of Information and Learning Sciences}.
+
+\hypertarget{papers-in-refereed-conference-proceedings}{%
+\subsection{Papers in Refereed Conference
+Proceedings}\label{papers-in-refereed-conference-proceedings}}
+
+\hypertarget{refs_proceedings}{}
+\leavevmode\hypertarget{ref-seo2020coding}{}%
+\textbf{Seo, J.}, \& Richard, G. T. (2020). Coding through touch:
+Exploring and re-designing tactile making activities with learners with
+visual dis/abilities. In M. Gresalfi \& I. Horn (Eds.),
+\emph{Interdisciplinarity in the learning sciences, 14th international
+conference of the learning sciences (icls) 2020} (Vol. 3, pp.
+1373--1380). Nashville, TN: International Society of the Learning
+Sciences (ISLS).
+
+\leavevmode\hypertarget{ref-seo2019discovering}{}%
+\textbf{Seo, J.} (2019). Discovering informal learning cultures of blind
+individuals pursuing stem disciplines: A quantitative ethnography using
+listserv archives. \emph{The first international conference on
+quantitative ethnography: Doctoral consortium}, S66--S67. Madison, WI.
+\emph{Awarded the best Doctoral Consortium Proposal Cengage fellowship}.
+
+\leavevmode\hypertarget{ref-seo2018making}{}%
+\textbf{Seo, J.} (2018). Accessibility and inclusivity in making:
+Engaging learners with all abilities in making activities. In
+\emph{Proceedings of the 3rd learning sciences graduate student
+conference} (pp. 141--142). Nashville, TN: LSGSC Planning Team.
+
+\leavevmode\hypertarget{ref-seo2018accessibility}{}%
+\textbf{Seo, J.}, \& Richard, G. T. (2018). Accessibility, making and
+tactile robotics: Facilitating collaborative learning and computational
+thinking for learners with visual impairments. In J. Kay \& R. Luckin
+(Eds.), \emph{Rethinking learning in the digital age: Making the
+learning sciences count, 13th international conference of the learning
+sciences (icls) 2018} (Vol. 3, pp. 1755--1757). London, UK:
+International Society of the Learning Sciences (ISLS).
+
+\leavevmode\hypertarget{ref-konecki2017role}{}%
+Konecki, M., Lovrenčić, S., \textbf{Seo, J.}, \& LaPierre, C. (2017).
+The role of ict in aiding visually impaired students and professionals.
+\emph{Proceedings of the 11th Multidisciplinary Academic Conference},
+148.
+
+\leavevmode\hypertarget{ref-seo2017embracing}{}%
+\textbf{Seo, J.}, AlQahtani, M., Ouyang, X., \& Borge, M. (2017).
+Embracing learners with visual impairments in cscl. In B. K. Smith, M.
+Borge, E. Mercier, \& K. Y. Lim (Eds.), \emph{Making a difference:
+Prioritizing equity and access in cscl, 12th international conference on
+computer supported collaborative learning (cscl) 2017} (Vol. 2, pp.
+573--576). Philadelphia, PA: International Society of the Learning
+Sciences (ISLS).
+
+\hypertarget{presentations}{%
+\section{Presentations}\label{presentations}}
+
+\hypertarget{peer-reviewed-conference-presentations}{%
+\subsection{Peer-Reviewed Conference
+Presentations}\label{peer-reviewed-conference-presentations}}
+
+\textbf{Seo, J.} (accepted). \emph{Accessible data science beyond visual
+models}. Talk will be presented at the rstudio::global(2021), Virtual.
+
+\textbf{Seo, J.}, \& Richard, G. T. (accepted). \emph{Uncovering latent
+topics of blind people in computer science: structural topic modeling
+for an email corpus}. Poster will be presented at the second
+International Conference on Quantitative Ethnography (ICQE), Malibu, CA.
+
+Donegan, S. R., Porter, C., Fogel, A., \textbf{Seo, J.}, Choi, S., \&
+Eagan, B. (accepted). \emph{U.S. media coverage during COVID-19: an
+epistemic network analysis of bias, topic, and trajectory}. Poster will
+be presented at the second International Conference on Quantitative
+Ethnography (ICQE), Malibu, CA.
+
+\textbf{Seo, J.} (2020, September). \emph{Discovering knowledge sharing
+patterns of blind people pursuing STEM disciplines: data science and
+computational linguistics on large-scale email corpora}. Poster
+presented at the Doctoral Consortium of the annual meeting of the ACM
+Richard Tapia Celebration of Diversity in Computing, virtual.
+\emph{Awarded the Qualcomm scholarship}.
+
+\textbf{Seo, J.}, \& Richard, G. T. (2020, April). \emph{Maker
+inclusivity = maker accessibility: further interrogations for diverse
+participation}. Poster presented at the annual meeting of the American
+Educational Research Association (AERA), Virtual.
+
+\textbf{Seo, J.}, \& Richard, G. T. (2018, April). \emph{Furthering
+inclusivity in making: a framework for accessible design of makerspaces
+for learners with disabilities}. Poster presented at the annual meeting
+of the American Educational Research Association (AERA), New York City,
+NY.
+
+Bunag, T., Aniela, L., Nielsen, M. C., \& \textbf{Seo, J.} (2017,
+November). \emph{The rapidly changing world of accessible online
+learning}. Presented at the Panel Discussion: DDL - Accessible Online
+Learning In Concurrent Presentation of the Association for Educational
+Communications and Technology (AECT), Jacsonville, FL.
+
+\textbf{Seo, J.} (2017, September). \emph{Tactile access to visualized
+statistical data using R}. Poster presented at the annual meeting of the
+ACM Richard Tapia Celebration of Diversity in Computing, Atlanta, GA.
+
+Liao, J., Patcyk, M., \textbf{Seo, J.}, \& Hooper, S. (2016, October).
+\emph{Using hierarchical linear modeling to measure growth rate in a
+gamified CBM environment}. Paper presented at the annual meeting of the
+Northeastern Educational Research Association (NERA), Trumbull, CT.
+
+\textbf{Seo, J.} (2016, March). \emph{Engaging blind learners in
+statistics study using R}. Presented at the annual meeting of the
+Teaching and Learning with Technology (TLT) Symposium, University Park,
+PA.
+
+Kim, K., \textbf{Seo, J.}, \& Clariana, R. B. (2016, March).
+\emph{Automatic knowledge structure measure in online courses}.
+Presented at the annual meeting of the Teaching and Learning with
+Technology (TLT) Symposium, University Park, PA.
+
+\textbf{Seo, J.} (2015, November). \emph{Assistive technologies for
+equal access in general education}. Presented at the annual meeting of
+the Association for Educational Communications and Technology (AECT),
+Indianapolis, IN.
+
+\textbf{Seo, J.}, \& Park, E. (2015, October). \emph{The more
+accessible, the more potential: simple tips for online accessibility}.
+Presented at the Technology and Learning Conference, Blue Bell, PA.
+
+\hypertarget{invited-guest-lectures}{%
+\subsection{Invited Guest Lectures}\label{invited-guest-lectures}}
+
+\begin{cventries}
+    \cventry{Blockers for Users on a Screen Reader}{EIT Accessibility Group, The Pennsylvania State University}{University Park, PA}{Oct. 2019}{\begin{cvitems}
+\item Invited guest talk to a webinar to train Penn State instructional designers for key WCAG 2.1 guidelines to make content more accessible including: image alt text, clear link text and heading structure, proper table structure, form and button labels, the need for keyboard functionality and how to convey information regardless of visual formatting.
+\end{cvitems}}
+    \cventry{A Small Step to Take Your Data Analysis to Another Level}{Chonnam National University}{Gwangju, South Korea}{Jul. 2019}{\begin{cvitems}
+\item Invited guest talk to CNU to teach nursing faculty and students for basic concept of machine learning, computer-assisted text mining, and topic modelling to improve their qualitative data reliability.
+\end{cvitems}}
+    \cventry{Being a Reasonable Realist: Wise Negotiation between Give and Take}{Sungkyunkwan University}{Seoul, South Korea}{Jun. 2019}{\begin{cvitems}
+\item Invited guest talk to SKKU “Student Success Center” as one of the successful role models to inspire undergraduate students for future planning.
+\end{cvitems}}
+    \cventry{Accessibility of Math, Statistics, and Social Sciences}{The MathML Meeting, The Pennsylvania State University}{University Park, PA}{May. 2019}{\begin{cvitems}
+\item Invited guest talk to Penn State MathML group to present assistive technology and accessibility for STEM content.
+\end{cvitems}}
+    \cventry{Key-Note Speech for STEM Extension}{BBVS Summer Academy STEM Extension}{University Park, PA}{Jul. 2018}{\begin{cvitems}
+\item Invited key-note speaker to the STEM (Science, Technology, Engineering, and Mathematics) week of “The Summer Academy for Students who are Blind or Visually Impaired.”
+\item Hosted by the Pennsylvania Department of Labor and Industry, Office of Vocational Rehabilitation’s Bureau of Blindness and Visual Services, in partnership with the Pennsylvania Department of Education, Bureau Of Special Education’s Pennsylvania Training and Technical Assistance Network and Pennsylvania State University’s College of Education and College of Health and Human Development.
+\end{cvitems}}
+    \cventry{Adaptive Technology Lesson}{LDT 100 - ``World Technologies and Learning'', The Pennsylvania State University}{University Park, PA}{Apr. 2018}{\begin{cvitems}
+\item Two times invited guest talk to Dr. Joshua Kirby's class for the week of “The Cost of 21st Century Education.”
+\end{cvitems}}
+    \cventry{Universal Design 101: Three Fundamental Frameworks for an Equitable World}{LDT First Friday Speaking Series, The Pennsylvania State University}{University Park, PA}{Apr. 2017}{\begin{cvitems}
+\item Invited guest talk to the Learning, Design, and Technology (LDT) program of Penn State to introduce theoretical and practical background of Universal Design for Learning.
+\end{cvitems}}
+    \cventry{Inclusive Making}{Northwestern University}{Evanston, IL}{Oct. 2017}{\begin{cvitems}
+\item Invited guest talk to Dr. Marcelo Worsley’s “Inclusive Making” class for Learning Sciences Program.
+\end{cvitems}}
+    \cventry{Accessibility Testing Using NVDA}{The Accessibility Users Group, The Pennsylvania State University}{University Park, PA}{Jul. 2017}{\begin{cvitems}
+\item Invited guest talk to the Penn State online learning Accessibility User Group to train web accessibility testing with open-source screen reader NVDA.
+\end{cvitems}}
+    \cventry{Non-Visual Access to Canvas with Assistive Technology}{Canvas Day 17}{University Park, PA}{Mar. 2017}{\begin{cvitems}
+\item Invited guest to a showcase of Canvas, a learning management tool, to demonstrate how to interact with the online system using assistive technology for students with disabilities.
+\end{cvitems}}
+    \cventry{Student Panel Discussion: Student Issues}{Ed-ICT International Network: Disabled students, ICT, post-compulsory education \& employment}{Seattle, WA}{Mar. 2017}{\begin{cvitems}
+\item Invited student panel to the first Ed-ICT International Network symposium.
+\end{cvitems}}
+    \cventry{Accessibility: The First Step towards Ability}{Korea Employment Promotion Agency for the Disabled}{Gyeonggi, South Korea}{Jul. 2016}{\begin{cvitems}
+\item Invited guest talk to KEAD to train the employees in concept of accessibility and universal design.
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{awards-and-honors}{%
+\section{Awards and Honors}\label{awards-and-honors}}
+
+\begin{cventries}
+    \cventry{ICES Annual Science Conference 2019}{Best Presentation Award}{Hamburg, Germany}{2019}{\vspace{-4mm}}
+    \cventry{IMBER ClimEco5 Summer School}{Student Choice and Special Mention Poster Award}{Natal, Brazil}{2016}{\vspace{-4mm}}
+    \cventry{YOUMARES 7 conference, German Society for Marine Research}{Best Poster Award}{Hamburg, Germany}{2016}{\vspace{-4mm}}
+    \cventry{MARUM Center for Marine Environmental Science}{MARUM Research Award for Marine Science}{Bremen, Germany}{2015}{\begin{cvitems}
+\item awarded in recognition of an outstanding Masters
+\end{cvitems}}
+    \cventry{YOUMARES 6 conference, German Society for Marine Research}{Best Speaker Award}{Bremen, Germany}{2015}{\vspace{-4mm}}
+    \cventry{Fisheries Ecology Summer School, University of Iceland}{Best Student Poster}{Reykjavík, Iceland}{2011}{\vspace{-4mm}}
+\end{cventries}
+
+\end{document}
