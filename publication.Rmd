@@ -10,7 +10,7 @@
 :::
 \endgroup -->
 
-## Refereed Journal Papers
+## Peer-reviewed Journal Papers
 
 ::: {#refs_journals}
 :::
