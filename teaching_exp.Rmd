@@ -3,5 +3,5 @@
 ```{r teaching-experience}
 ezpickr::pick("data/teaching-experience.xlsx") %>%
   tidyr::fill(-why) %>%
-  vitae::detailed_entries(what, when, with, where, why)
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
 ```
