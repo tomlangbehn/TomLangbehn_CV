@@ -10,10 +10,10 @@
 :::
 \endgroup -->
 
-## Articles in Peer-reviewed Journals
+<!-- ## Articles in Peer-reviewed Journals -->
 
-::: {#refs_journals}
-:::
+<!-- ::: {#refs_journals} -->
+<!-- ::: -->
 
 ## Working Papers under Revision or Review
 
