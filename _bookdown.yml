@@ -14,6 +14,7 @@ rmd_files:
   - "organisation.Rmd"
   - "membership.Rmd"
   - "cruises.Rmd"
+  - "supervision.Rmd"
   - "publication.Rmd"
 
   

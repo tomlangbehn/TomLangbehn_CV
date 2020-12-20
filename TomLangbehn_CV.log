@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.19)  19 DEC 2020 23:35
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.19)  20 DEC 2020 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1111,24 +1111,24 @@ This may cause the page layout to be inconsistent, however.
 
 ] [2] [3]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 324.
+(Font)              scaled to size 12.0pt on input line 335.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 324.
+(Font)              scaled to size 12.0pt on input line 335.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 332.
+(Font)              scaled to size 10.95pt on input line 343.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 378.
-[4] (./TomLangbehn_CV.aux)
+(Font)              scaled to size 10.95pt on input line 389.
+[4] [5] (./TomLangbehn_CV.aux)
 Package rerunfilecheck Info: File `TomLangbehn_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31992 strings out of 479290
- 636853 string characters out of 5875097
- 1118351 words of memory out of 5000000
- 50937 multiletter control sequences out of 15000+600000
+ 31993 strings out of 479290
+ 636866 string characters out of 5875097
+ 1118375 words of memory out of 5000000
+ 50938 multiletter control sequences out of 15000+600000
  407802 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  121i,11n,124p,552b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TomLangbehn_CV.pdf (4 pages).
+Output written on TomLangbehn_CV.pdf (5 pages).
