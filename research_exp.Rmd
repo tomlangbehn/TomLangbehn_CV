@@ -1,7 +1,8 @@
-# Research Experience
+# Research experience
 
 ```{r research-experience}
 ezpickr::pick("data/research-experience.xlsx") %>%
   tidyr::fill(-why) %>%
+    arrange(desc(order)) %>%
   vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
 ```

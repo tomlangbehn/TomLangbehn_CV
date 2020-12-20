@@ -1,7 +1,34 @@
 # Teaching Experience
 
-```{r teaching-experience}
+## University courses
+```{r University courses}
 ezpickr::pick("data/teaching-experience.xlsx") %>%
+  filter(type == "course") %>% 
+  rowwise %>% 
+  mutate(month = as.numeric(which(month.abb == month))) %>% 
   tidyr::fill(-why) %>%
+  arrange(desc(as.numeric(year)), desc(month)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+## Webinars
+```{r webinars}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  filter(type == "webinar") %>% 
+  rowwise %>% 
+  mutate(month = as.numeric(which(month.abb == month))) %>% 
+  tidyr::fill(-why) %>%
+  arrange(desc(as.numeric(year)), desc(month)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+## Workshops
+```{r workshops}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  filter(type == "workshop") %>% 
+  rowwise %>% 
+  mutate(month = as.numeric(which(month.abb == month))) %>% 
+  tidyr::fill(-why) %>%
+  arrange(desc(as.numeric(year)), desc(month)) %>% 
   vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
 ```

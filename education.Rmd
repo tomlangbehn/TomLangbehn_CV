@@ -3,5 +3,6 @@
 ```{r education}
 ezpickr::pick("data/education.xlsx") %>%
   tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
   vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
 ```

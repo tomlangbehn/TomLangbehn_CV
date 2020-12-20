@@ -1,8 +1,11 @@
 # Supervision
 
+main supervision is indicated by a *
+
 ```{r supervision}
 ezpickr::pick("data/supervision.xlsx") %>% 
   tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
   vitae::detailed_entries(with= paste0(who,", ",level), what=what, when=when, why=why)
 ```
 
