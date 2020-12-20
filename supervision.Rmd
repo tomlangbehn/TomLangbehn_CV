@@ -1,6 +1,6 @@
 # Supervision
 
-main supervision is indicated by a *
+<!-- main supervision is indicated by a * -->
 
 ```{r supervision}
 ezpickr::pick("data/supervision.xlsx") %>% 
