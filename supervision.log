@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.19)  20 DEC 2020 15:06
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.19)  20 DEC 2020 14:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**TomLangbehn_CV.tex
-(./TomLangbehn_CV.tex
+**supervision.tex
+(./supervision.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-07> xparse <2020-03-03> (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
@@ -898,35 +898,53 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@lastruleclass=\count326
 \@thisrulewidth=\dimen288
 )
-\cslhangindent=\skip82
-\csllabelwidth=\skip83
+(c:/Users/tla051/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb
+.sty
+Package: fancyvrb 2020/05/03 v3.6 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count327
+\FV@InFile=\read4
+\FV@TabBox=\box74
+\c@FancyVerbLine=\count328
+\FV@StepNumber=\count329
+\FV@OutFile=\write6
+)
+(c:/Users/tla051/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip82
+\fb@frw=\dimen289
+\fb@frh=\dimen290
+\FrameRule=\dimen291
+\FrameSep=\dimen292
+)
+\cslhangindent=\skip83
+\csllabelwidth=\skip84
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 120.
-(./TomLangbehn_CV.aux)
-\openout1 = `TomLangbehn_CV.aux'.
+(Font)              scaled to size 10.95pt on input line 139.
+No file supervision.aux.
+\openout1 = `supervision.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 120.
+LaTeX Info: Redefining \selectfont on input line 139.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -962,49 +980,49 @@ LaTeX Info: Redefining \selectfont on input line 120.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 120.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 120.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 120.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/bx/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 139.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 120.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 139.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 120.
+(Font)              `operators' in the math version `normal' on input line 139.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input
- line 120.
+ line 139.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 120.
+(Font)              `operators' in the math version `bold' on input line 139.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on inpu
-t line 120.
+t line 139.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 120.
+(Font)              `symbols' in the math version `normal' on input line 139.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
 (Font)                  OMS/cmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on inpu
-t line 120.
+t line 139.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 120.
+(Font)              `symbols' in the math version `bold' on input line 139.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on inpu
-t line 120.
+t line 139.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-20.
+39.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/m/n on inpu
-t line 120.
+t line 139.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 120
+(Font)              `largesymbols' in the math version `bold' on input line 139
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/cmex/m/n --> TU/latinmodern-math.otf(3)/b/n on inpu
-t line 120.
-Package hyperref Info: Link coloring OFF on input line 120.
+t line 139.
+Package hyperref Info: Link coloring OFF on input line 139.
 
 (c:/Users/tla051/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
 sty
@@ -1018,117 +1036,47 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count327
+\c@section@level=\count330
 )
-LaTeX Info: Redefining \ref on input line 120.
-LaTeX Info: Redefining \pageref on input line 120.
-LaTeX Info: Redefining \nameref on input line 120.
-(./TomLangbehn_CV.out) (./TomLangbehn_CV.out)
-\@outlinefile=\write6
-\openout6 = `TomLangbehn_CV.out'.
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
+\@outlinefile=\write7
+\openout7 = `supervision.out'.
 
-\headertextwidth=\skip84
-\headerphotowidth=\skip85
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+\headertextwidth=\skip85
+\headerphotowidth=\skip86
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 125.
+(Font)              scaled to size 10.95116pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.6658pt on input line 125.
+(Font)              scaled to size 7.6658pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.47559pt on input line 125.
+(Font)              scaled to size 5.47559pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 125.
+(Font)              scaled to size 10.94882pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.66417pt on input line 125.
+(Font)              scaled to size 7.66417pt on input line 144.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.47441pt on input line 125.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 7.6pt on input line 125.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 7.6pt on input line 125.
-LaTeX Font Info:    Calculating math sizes for size <6.8> on input line 125.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.80072pt on input line 125.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.76048pt on input line 125.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 3.40034pt on input line 125.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.79927pt on input line 125.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.75946pt on input line 125.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 3.39963pt on input line 125.
-LaTeX Font Info:    Trying to load font information for TU+academicons on input
- line 125.
+(Font)              scaled to size 5.47441pt on input line 144.
 
-(c:/Users/tla051/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/academicons/tuaca
-demicons.fd)
-Missing character: There is no   in font [academicons.ttf]:!
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 125.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 125.
+! LaTeX Error: There's no line here to end.
 
-Overfull \hbox (1.46pt too wide) in paragraph at lines 125--125
-[]$[]$ $[]$$[]$ 
- []
-
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 16.0pt on input line 143.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 16.0pt on input line 143.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 9.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
-able
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 9.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
-able
-(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
-t line 150.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 150.
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 13.59999pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
-
-[1
-
-] [2] [3]
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 339.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 339.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 347.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 393.
-[4] [5] (./TomLangbehn_CV.aux)
-Package rerunfilecheck Info: File `TomLangbehn_CV.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
- ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 
+       
 Here is how much of TeX's memory you used:
- 31993 strings out of 479290
- 636866 string characters out of 5875097
- 1118375 words of memory out of 5000000
- 50938 multiletter control sequences out of 15000+600000
- 407802 words of font info for 119 fonts, out of 8000000 for 9000
+ 32336 strings out of 479290
+ 639860 string characters out of 5875097
+ 1091860 words of memory out of 5000000
+ 51324 multiletter control sequences out of 15000+600000
+ 405954 words of font info for 82 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 121i,11n,124p,552b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 121i,3n,124p,549b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TomLangbehn_CV.pdf (5 pages).
+No pages of output.

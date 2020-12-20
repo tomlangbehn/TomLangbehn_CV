@@ -1,4 +1,8 @@
 # Supervision
 
-  *  Student 1
-  *  Student 2
+```{r supervision}
+ezpickr::pick("data/supervision.xlsx") %>% 
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(with= paste0(who,", ",level), what=what, when=when, why=why)
+```
+
