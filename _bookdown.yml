@@ -15,6 +15,7 @@ rmd_files:
   - "membership.Rmd"
   - "cruises.Rmd"
   - "supervision.Rmd"
+  - "reviewer.Rmd"
   - "publication.Rmd"
 
   
