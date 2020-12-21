@@ -30,6 +30,8 @@ knit: bookdown::render_book
 bibliography_journals: "bib/journal.bib"
 bibliography_proceedings: "bib/proceedings.bib"
 bibliography_working_paper: "bib/working_paper.bib"
+bibliography_talks: "bib/talks.bib"
+bibliography_posters: "bib/posters.bib"
 #given-name-pattern: Tom J
 #family-name-pattern: Langbehn
 ---

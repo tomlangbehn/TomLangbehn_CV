@@ -1,16 +1,6 @@
 # Publications
 
-*indicate equal author contributions
-
-<!-- ## Selected Publications
-
-\begingroup
-\setlength{\parindent}{-0.5in}
-\setlength{\leftskip}{0.5in}
-
-::: {#refs_selected}
-:::
-\endgroup -->
+*indicates equal author contributions
 
 ```{r clean_journal, include=FALSE, warning = FALSE,  message=FALSE}
 l <- readLines(here::here("bib", "journal.bib")) %>%
@@ -28,8 +18,15 @@ cat(l, sep = "\n", file = here::here("bib", "journal.bib"))
 
 ## Articles in Peer-reviewed Journals
 
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
 ::: {#refs_journals}
 :::
+
+\endgroup
+
 
 
 
@@ -50,9 +47,15 @@ cat(l, sep = "\n", file = here::here("bib", "working_paper.bib"))
 
 ## Working Papers under Revision or Review
 *in. prep.*  articles only listed when ready to submit
- 
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
 ::: {#refs_working_paper}
 :::
+
+\endgroup
 
 
 
@@ -72,5 +75,13 @@ cat(l, sep = "\n", file = here::here("bib", "proceedings.bib"))
 ```
 
 ## Articles in Peer-reviewed Conference Proceedings
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
 ::: {#refs_proceedings}
 :::
+
+\endgroup
+

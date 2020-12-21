@@ -6,30 +6,22 @@ rmd_files:
   - "education.Rmd"
   - "research_exp.Rmd"
   - "working_exp.Rmd"
-  - "teaching_exp.Rmd"
+  
   - "mobility.Rmd"
   - "award.Rmd"
+  - "cruises.Rmd"
   - "organisation.Rmd"
   - "membership.Rmd"
-  - "cruises.Rmd"
+
+  - "teaching_exp.Rmd"
   - "supervision.Rmd"
-  - "reviewer.Rmd"
+
+ 
   - "publication.Rmd"
-
-  
-  # - "research_topics.Rmd"
-  # - "research_methods.Rmd"
-  # - "skills.Rmd"
-  # - "certificate.Rmd"
-  # - "software_dev.Rmd"
+  - "talks_and_posters.Rmd"
+  - "reviewer.Rmd"
 
 
-  # - "healthcare.Rmd"
-  # - "presentation.Rmd"
-  # - "grant.Rmd"
-
-  # - "service.Rmd"
-
-  # - "backmatter.Rmd"
+ # - "backmatter.Rmd"
 book_filename: "TomLangbehn_CV"
 delete_merged_file: true
