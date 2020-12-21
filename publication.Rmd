@@ -1,5 +1,7 @@
 # Publications
 
+*indicate equal author contributions
+
 <!-- ## Selected Publications
 
 \begingroup
@@ -10,17 +12,65 @@
 :::
 \endgroup -->
 
-<!-- ## Articles in Peer-reviewed Journals -->
+```{r clean_journal, include=FALSE, warning = FALSE,  message=FALSE}
+l <- readLines(here::here("bib", "journal.bib")) %>%
+  # !> make author name uniform to allow highlighting with "strong.lua"
+  str_replace_all(., "Langbehn, Tom J", "Langbehn, Tom J.") %>%
+  str_replace_all(., "Langbehn, Tom J.", "Langbehn, T") %>%
+  str_replace_all(., "Langbehn, T.J.", "Langbehn, T") %>%
+  str_replace_all(., "T.J. Langbehn", "Langbehn, T")
+# !> clean issue numbers that contain the month
+pattern <- str_c("\\b", paste0("number = \\{", month.name), "\\b", collapse = "|")
+l <- l %>% str_replace_all(., pattern, "number = {")
+# !> write to file
+cat(l, sep = "\n", file = here::here("bib", "journal.bib"))
+```
 
-<!-- ::: {#refs_journals} -->
-<!-- ::: -->
+## Articles in Peer-reviewed Journals
+
+::: {#refs_journals}
+:::
+
+
+
+
+```{r clean_working_papers, include=FALSE, warning = FALSE,  message=FALSE}
+l <- readLines(here::here("bib", "working_paper.bib")) %>%
+  # !> make author name uniform to allow highlighting with "strong.lua"
+  str_replace_all(., "Langbehn, Tom J", "Langbehn, Tom J.") %>%
+  str_replace_all(., "Langbehn, Tom J.", "Langbehn, T") %>%
+  str_replace_all(., "Langbehn, T.J.", "Langbehn, T") %>%
+  str_replace_all(., "T.J. Langbehn", "Langbehn, T")
+# !> clean issue numbers that contain the month
+pattern <- str_c("\\b", paste0("number = \\{", month.name), "\\b", collapse = "|")
+l <- l %>% str_replace_all(., pattern, "number = {")
+# !> write to file
+cat(l, sep = "\n", file = here::here("bib", "working_paper.bib"))
+```
 
 ## Working Papers under Revision or Review
-
+*in. prep.*  articles only listed when ready to submit
+ 
 ::: {#refs_working_paper}
 :::
 
-## Articles in Peer-reviewed Conference Proceedings
 
+
+
+```{r clean_proceedings, include=FALSE, warning = FALSE,  message=FALSE}
+l <- readLines(here::here("bib", "proceedings.bib")) %>%
+  # !> make author name uniform to allow highlighting with "strong.lua"
+  str_replace_all(., "Langbehn, Tom J", "Langbehn, Tom J.") %>%
+  str_replace_all(., "Langbehn, Tom J.", "Langbehn, T") %>%
+  str_replace_all(., "Langbehn, T.J.", "Langbehn, T") %>%
+  str_replace_all(., "T.J. Langbehn", "Langbehn, T")
+# !> clean issue numbers that contain the month
+pattern <- str_c("\\b", paste0("number = \\{", month.name), "\\b", collapse = "|")
+l <- l %>% str_replace_all(., pattern, "number = {")
+# !> write to file
+cat(l, sep = "\n", file = here::here("bib", "proceedings.bib"))
+```
+
+## Articles in Peer-reviewed Conference Proceedings
 ::: {#refs_proceedings}
 :::

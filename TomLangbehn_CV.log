@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.19)  20 DEC 2020 19:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.21)  21 DEC 2020 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,36 +1078,66 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
 (Font)              scaled to size 16.0pt on input line 143.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 147.
+(Font)              scaled to size 10.0pt on input line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/b/n' will be
+(Font)              scaled to size 10.0pt on input line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <9> not avail
+able
+(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
+t line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
+(Font)              scaled to size 9.0pt on input line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 151.
 LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 147.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 151.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 154.
+(Font)              scaled to size 8.0pt on input line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/n' will be
+(Font)              scaled to size 8.0pt on input line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/sl' in size <8> not avail
+able
+(Font)              Font shape `TU/SourceSansPro(2)/m/it' tried instead on inpu
+t line 151.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(2)/m/it' will be
+(Font)              scaled to size 8.0pt on input line 151.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 13.59999pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 181.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 8.0pt on input line 181.
 [1
 
-] (./TomLangbehn_CV.aux)
+]
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 213.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 213.
+[2] [3]
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 364.
+[4]
+LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 380.
+
+Overfull \hbox (12.389pt too wide) in paragraph at lines 438--442
+[][]\TU/SourceSansPro(0)/b/n/10.95 Langbehn, T.J.\TU/SourceSansPro(0)/m/n/10.95
+ , Aksnes, D. L., Kaartvedt, S., Fiksen, Ø., & Jørgensen, C. (in prep.). Polewa
+rd distribution of mesopelagic
+ []
+
+[5] (./TomLangbehn_CV.aux)
 Package rerunfilecheck Info: File `TomLangbehn_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31961 strings out of 479290
- 635816 string characters out of 5875097
- 1093117 words of memory out of 5000000
- 50914 multiletter control sequences out of 15000+600000
- 407746 words of font info for 112 fonts, out of 8000000 for 9000
+ 31994 strings out of 479290
+ 636711 string characters out of 5875273
+ 1118471 words of memory out of 5000000
+ 50942 multiletter control sequences out of 15000+600000
+ 407802 words of font info for 119 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 121i,11n,124p,552b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 121i,12n,124p,552b,632s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TomLangbehn_CV.pdf (1 page).
+Output written on TomLangbehn_CV.pdf (5 pages).
