@@ -1,0 +1,303 @@
+---
+graphics: yes
+name: Tom J
+surname: Langbehn
+headcolor: 414141
+#qualifications: 
+position: "Postdoctoral Research Fellow, Theoretical Ecology Group"
+address: "Department of Biological Sciences, University of Bergen, Norway"
+# phone: "+1 814-777-5825"
+www: bio.uib.no/te/tl/
+email: "tom.langbehn@uib.no"
+twitter: TomJasperL
+github: tomlangbehn
+orcid: 0000-0003-1208-4793
+googlescholar: upYmy0oAAAAJ
+aboutme: |
+   I am a marine biologist with a keen interested in evolutionary ecology and global change biology, i.e., how climate change and human activities such as fisheries shape biological interactions and processes across various levels of organisation. I aim to solve real-life problems by identifying and understanding how processes at the individual level drive ecosystems. In my work, I combine mechanistic modelling often informed by theory with observation from the field. I enjoy thinking broadly and across disciplines and have a particular fascination for polar ecosystems and the ocean twilight zone.
+   
+   
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+csl: "csl/apa6-cv.csl"
+nocite: "@*"
+header-includes:
+  - \usepackage{fancyhdr}
+  - \pagestyle{fancy}
+  - \fancyhf{}
+  - \fancyhead[R]{\thepage}
+knit: bookdown::render_book
+#bibliography_selected: "bib/selected.bib"
+bibliography_journals: "bib/journal.bib"
+bibliography_proceedings: "bib/proceedings.bib"
+bibliography_working_paper: "bib/working_paper.bib"
+bibliography_talks: "bib/talks.bib"
+bibliography_posters: "bib/posters.bib"
+#given-name-pattern: Tom J
+#family-name-pattern: Langbehn
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(ezpickr)
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Education
+
+```{r education}
+ezpickr::pick("data/education.xlsx") %>%
+  tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:education.Rmd-->
+
+# Research experience
+
+```{r research-experience}
+ezpickr::pick("data/research-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+    arrange(desc(order)) %>%
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:research_exp.Rmd-->
+
+# Working Experience
+
+```{r working-experience}
+ezpickr::pick("data/working-experience.xlsx") %>%
+  tidyr::fill(-why) %>%
+    arrange(desc(order)) %>%
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:working_exp.Rmd-->
+
+# Academic mobility
+
+*only stays longer than two month are listed
+
+```{r mobility}
+ezpickr::pick("data/mobility.xlsx") %>%
+  tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:mobility.Rmd-->
+
+# Awards and Honors
+
+```{r award}
+ezpickr::pick("data/award.xlsx") %>%
+  tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:award.Rmd-->
+
+# Research Cruises
+
+I have participated in 9 research cruises, including one as a cruise leader, and spent in total > 50 days at sea, with some cruises lasting up to two weeks. I have worked both on research and commercial fishing vessels, in the North Sea, the Baltic Sea, Icelandic waters, Norwegian coastal waters, the Barents Sea and Arctic waters up to the marginal ice zone.
+
+<!--chapter:end:cruises.Rmd-->
+
+# Organisation Of Scientific Meetings
+
+```{r service}
+ezpickr::pick("data/organisation.xlsx") %>%
+  tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:organisation.Rmd-->
+
+# Current Memberships
+
+  *  since 2017 - Norwegian Association of Marine Scientists / Norsk Havforskerforening (NHF)
+  *  since 2015 - Association of Polar Early Career Scientists (APECS)
+
+<!--chapter:end:membership.Rmd-->
+
+# Teaching Experience
+
+## University courses
+```{r University courses}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  filter(type == "course") %>% 
+  rowwise %>% 
+  mutate(month = as.numeric(which(month.abb == month))) %>% 
+  tidyr::fill(-why) %>%
+  arrange(desc(as.numeric(year)), desc(month)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+## Webinars
+```{r webinars}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  filter(type == "webinar") %>% 
+  rowwise %>% 
+  mutate(month = as.numeric(which(month.abb == month))) %>% 
+  tidyr::fill(-why) %>%
+  arrange(desc(as.numeric(year)), desc(month)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+## Workshops
+```{r workshops}
+ezpickr::pick("data/teaching-experience.xlsx") %>%
+  filter(type == "workshop") %>% 
+  rowwise %>% 
+  mutate(month = as.numeric(which(month.abb == month))) %>% 
+  tidyr::fill(-why) %>%
+  arrange(desc(as.numeric(year)), desc(month)) %>% 
+  vitae::detailed_entries(with=what, when=when, what=with, where=where, why=why)
+```
+
+<!--chapter:end:teaching_exp.Rmd-->
+
+# Supervision
+
+<!-- main supervision is indicated by a * -->
+
+```{r supervision}
+ezpickr::pick("data/supervision.xlsx") %>% 
+  tidyr::fill(-why) %>%
+  arrange(desc(order)) %>% 
+  vitae::detailed_entries(with= paste0(who,", ",level), what=what, when=when, why=why)
+```
+
+
+<!--chapter:end:supervision.Rmd-->
+
+# Publications
+
+*indicates equal author contributions
+
+```{r clean_journal, include=FALSE, warning = FALSE,  message=FALSE}
+l <- readLines(here::here("bib", "journal.bib")) %>%
+  # !> make author name uniform to allow highlighting with "strong.lua"
+  str_replace_all(., "Langbehn, Tom J", "Langbehn, Tom J.") %>%
+  str_replace_all(., "Langbehn, Tom J.", "Langbehn, T") %>%
+  str_replace_all(., "Langbehn, T.J.", "Langbehn, T") %>%
+  str_replace_all(., "T.J. Langbehn", "Langbehn, T")
+# !> clean issue numbers that contain the month
+pattern <- str_c("\\b", paste0("number = \\{", month.name), "\\b", collapse = "|")
+l <- l %>% str_replace_all(., pattern, "number = {")
+# !> write to file
+cat(l, sep = "\n", file = here::here("bib", "journal.bib"))
+```
+
+## Articles in Peer-reviewed Journals
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_journals}
+:::
+
+\endgroup
+
+
+
+
+
+```{r clean_working_papers, include=FALSE, warning = FALSE,  message=FALSE}
+l <- readLines(here::here("bib", "working_paper.bib")) %>%
+  # !> make author name uniform to allow highlighting with "strong.lua"
+  str_replace_all(., "Langbehn, Tom J", "Langbehn, Tom J.") %>%
+  str_replace_all(., "Langbehn, Tom J.", "Langbehn, T") %>%
+  str_replace_all(., "Langbehn, T.J.", "Langbehn, T") %>%
+  str_replace_all(., "T.J. Langbehn", "Langbehn, T")
+# !> clean issue numbers that contain the month
+pattern <- str_c("\\b", paste0("number = \\{", month.name), "\\b", collapse = "|")
+l <- l %>% str_replace_all(., pattern, "number = {")
+# !> write to file
+cat(l, sep = "\n", file = here::here("bib", "working_paper.bib"))
+```
+
+## Working Papers under Revision or Review
+*in. prep.*  articles only listed when ready to submit
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_working_paper}
+:::
+
+\endgroup
+
+
+
+
+```{r clean_proceedings, include=FALSE, warning = FALSE,  message=FALSE}
+l <- readLines(here::here("bib", "proceedings.bib")) %>%
+  # !> make author name uniform to allow highlighting with "strong.lua"
+  str_replace_all(., "Langbehn, Tom J", "Langbehn, Tom J.") %>%
+  str_replace_all(., "Langbehn, Tom J.", "Langbehn, T") %>%
+  str_replace_all(., "Langbehn, T.J.", "Langbehn, T") %>%
+  str_replace_all(., "T.J. Langbehn", "Langbehn, T")
+# !> clean issue numbers that contain the month
+pattern <- str_c("\\b", paste0("number = \\{", month.name), "\\b", collapse = "|")
+l <- l %>% str_replace_all(., pattern, "number = {")
+# !> write to file
+cat(l, sep = "\n", file = here::here("bib", "proceedings.bib"))
+```
+
+## Articles in Peer-reviewed Conference Proceedings
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_proceedings}
+:::
+
+\endgroup
+
+
+<!--chapter:end:publication.Rmd-->
+
+# Talks
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_talks}
+:::
+
+\endgroup
+
+
+
+# Posters
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+::: {#refs_posters}
+:::
+
+\endgroup
+
+
+<!--chapter:end:talks_and_posters.Rmd-->
+
+# Review activities
+
+Reviewer for *Global Change Biology*, *Conservation Physiology*, *Marine Ecology Progress Series*, *Ecological Modelling*.
+
+<!--chapter:end:reviewer.Rmd-->
+
