@@ -14,7 +14,7 @@ ezpickr::pick("data/teaching-experience.xlsx") %>%
 ## Webinars
 ```{r webinars}
 ezpickr::pick("data/teaching-experience.xlsx") %>%
-  filter(type == "webinar") %>% 
+  filter(type == "webinar") %>%
   rowwise %>% 
   mutate(month = as.numeric(which(month.abb == month))) %>% 
   tidyr::fill(-why) %>%

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.21)  21 DEC 2020 18:01
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.12.21)  21 DEC 2020 19:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,26 +1110,26 @@ This may cause the page layout to be inconsistent, however.
 [1
 
 ] [2]
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 305.
-LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
-(Font)              scaled to size 12.0pt on input line 305.
-[3]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 377.
+(Font)              scaled to size 10.95pt on input line 264.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 306.
+LaTeX Font Info:    Font shape `TU/SourceSansPro(1)/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 306.
+[3] [4]
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 380.
-[4]
-Overfull \hbox (12.389pt too wide) in paragraph at lines 444--448
+(Font)              scaled to size 10.95pt on input line 391.
+
+Overfull \hbox (12.389pt too wide) in paragraph at lines 455--459
  [][]\TU/SourceSansPro(0)/b/n/10.95 Langbehn, T.J.\TU/SourceSansPro(0)/m/n/10.9
 5 , Aksnes, D. L., Kaartvedt, S., Fiksen, Ø., & Jørgensen, C. (in prep.). Polew
 ard distribution of mesopelagic
  []
 
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/it' will be
-(Font)              scaled to size 10.95pt on input line 492.
+(Font)              scaled to size 10.95pt on input line 497.
 [5]
-Overfull \hbox (2.92082pt too wide) in paragraph at lines 559--564
+Overfull \hbox (2.92082pt too wide) in paragraph at lines 589--594
  [][]\TU/SourceSansPro(0)/b/n/10.95 Langbehn, T.J.\TU/SourceSansPro(0)/m/n/10.9
 5 , Jørgensen, C., & Enberg, K. (2020). \TU/SourceSansPro(0)/m/it/10.95 Explori
 ng the emergent niche of greater argentine (argentina silus)
@@ -1140,10 +1140,10 @@ Package rerunfilecheck Info: File `TomLangbehn_CV.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31998 strings out of 479290
- 636830 string characters out of 5875273
- 1118519 words of memory out of 5000000
- 50945 multiletter control sequences out of 15000+600000
+ 31999 strings out of 479290
+ 636857 string characters out of 5875273
+ 1118543 words of memory out of 5000000
+ 50946 multiletter control sequences out of 15000+600000
  407810 words of font info for 120 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  121i,12n,124p,552b,632s stack positions out of 5000i,500n,10000p,200000b,80000s

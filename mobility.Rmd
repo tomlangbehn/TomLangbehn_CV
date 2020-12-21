@@ -1,6 +1,6 @@
 # Academic mobility
 
-*only stays longer than two month are listed
+only stays longer than two month are listed
 
 ```{r mobility}
 ezpickr::pick("data/mobility.xlsx") %>%

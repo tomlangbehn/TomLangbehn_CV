@@ -1,5 +1,38 @@
 # Publications
 
+## Publications track record
+```{r}
+library(bib2df)
+#!> read jorunal articles from bib file
+bib_journal <- bib2df::bib2df(here::here("bib", "journal.bib"))
+bib_no_journal <- nrow(bib_journal)
+#!> read proceedings articles from bib file
+bib_proceedings <- bib2df::bib2df(here::here("bib", "proceedings.bib"))
+bib_no_proceedings <- nrow(bib_proceedings)
+
+total_pub <- bib_no_journal + bib_no_proceedings
+
+library(scholar)
+#!> access my scholar profile
+id <- 'upYmy0oAAAAJ&hl'
+profile <- get_profile(id)
+#!> get my citation history
+ct <- get_citation_history(id)
+#!> get my publications
+pubs <- get_publications(id) %>% as_tibble()
+no_pubs_scholar <- nrow(pubs)
+
+
+#!> access date
+access_dttm <- format(Sys.time(), "%d %b %Y")
+
+```
+
+During my career I have published a **total number of `r total_pub` peer-reviewed papers**. Thereof **`r bib_no_journal` publications in peer-reviewed scientific journals** and **`r bib_no_proceedings` in peer-reviewed conference proceedings**. According to Google Scholar (as of `r access_dttm`), these have been **cited a total of `r profile$total_cites` times**, thereof **`r dplyr::last(ct$cites)` times within `r dplyr::last(ct$year)`**.
+
+<br/><br/>
+
+## Articles in Peer-reviewed Journals
 *indicates equal author contributions
 
 ```{r clean_journal, include=FALSE, warning = FALSE,  message=FALSE}
@@ -16,8 +49,6 @@ l <- l %>% str_replace_all(., pattern, "number = {")
 cat(l, sep = "\n", file = here::here("bib", "journal.bib"))
 ```
 
-## Articles in Peer-reviewed Journals
-
 \begingroup
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
@@ -30,7 +61,7 @@ cat(l, sep = "\n", file = here::here("bib", "journal.bib"))
 
 
 
-
+## Working Papers under Revision or Review
 ```{r clean_working_papers, include=FALSE, warning = FALSE,  message=FALSE}
 l <- readLines(here::here("bib", "working_paper.bib")) %>%
   # !> make author name uniform to allow highlighting with "strong.lua"
@@ -45,8 +76,7 @@ l <- l %>% str_replace_all(., pattern, "number = {")
 cat(l, sep = "\n", file = here::here("bib", "working_paper.bib"))
 ```
 
-## Working Papers under Revision or Review
-*in. prep.*  articles only listed when ready to submit
+*in. prep.*  articles are only listed when ready to submit
 
 \begingroup
 \setlength{\parindent}{-0.5in}
@@ -58,8 +88,7 @@ cat(l, sep = "\n", file = here::here("bib", "working_paper.bib"))
 \endgroup
 
 
-
-
+## Articles in Peer-reviewed Conference Proceedings
 ```{r clean_proceedings, include=FALSE, warning = FALSE,  message=FALSE}
 l <- readLines(here::here("bib", "proceedings.bib")) %>%
   # !> make author name uniform to allow highlighting with "strong.lua"
@@ -73,8 +102,6 @@ l <- l %>% str_replace_all(., pattern, "number = {")
 # !> write to file
 cat(l, sep = "\n", file = here::here("bib", "proceedings.bib"))
 ```
-
-## Articles in Peer-reviewed Conference Proceedings
 
 \begingroup
 \setlength{\parindent}{-0.5in}

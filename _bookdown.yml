@@ -2,11 +2,10 @@ output_dir: "docs"
 rmd_files:
   - "index.Rmd"
 
-  
   - "education.Rmd"
   - "research_exp.Rmd"
   - "working_exp.Rmd"
-  
+
   - "mobility.Rmd"
   - "award.Rmd"
   - "cruises.Rmd"
@@ -16,7 +15,6 @@ rmd_files:
   - "teaching_exp.Rmd"
   - "supervision.Rmd"
 
- 
   - "publication.Rmd"
   - "talks_and_posters.Rmd"
   - "reviewer.Rmd"
