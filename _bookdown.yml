@@ -1,7 +1,7 @@
 output_dir: "docs"
 rmd_files:
   - "index.Rmd"
-
+  
   - "education.Rmd"
   - "research_exp.Rmd"
   - "working_exp.Rmd"
@@ -9,16 +9,18 @@ rmd_files:
   - "mobility.Rmd"
   - "award.Rmd"
   - "cruises.Rmd"
-  - "organisation.Rmd"
-  - "membership.Rmd"
+
 
   - "teaching_exp.Rmd"
   - "supervision.Rmd"
 
   - "publication.Rmd"
   - "talks_and_posters.Rmd"
+  
+  
   - "reviewer.Rmd"
-
+  - "organisation.Rmd"
+  - "membership.Rmd"
 
  # - "backmatter.Rmd"
 book_filename: "TomLangbehn_CV"

@@ -2,6 +2,7 @@
 
 ## Publications track record
 ```{r}
+library(tidyverse)
 library(bib2df)
 #!> read jorunal articles from bib file
 bib_journal <- bib2df::bib2df(here::here("bib", "journal.bib"))
@@ -28,9 +29,10 @@ access_dttm <- format(Sys.time(), "%d %b %Y")
 
 ```
 
-During my career I have published a **total number of `r total_pub` peer-reviewed papers**. Thereof **`r bib_no_journal` publications in peer-reviewed scientific journals** and **`r bib_no_proceedings` in peer-reviewed conference proceedings**. According to Google Scholar (as of `r access_dttm`), these have been **cited a total of `r profile$total_cites` times**, thereof **`r dplyr::last(ct$cites)` times within `r dplyr::last(ct$year)`**.
+During my career I have published a **total number of `r total_pub` peer-reviewed papers**. Thereof **`r bib_no_journal` publications in international peer-reviewed scientific journals** and **`r bib_no_proceedings` in peer-reviewed conference proceedings**. According to Google Scholar (as of `r access_dttm`) these have been **cited a total of `r profile$total_cites` times**, thereof **`r dplyr::last(ct$cites)` times within `r dplyr::last(ct$year)`**.  I have an **_h-index_ of `r profile$h_index`**.
 
-<br/><br/>
+&nbsp;
+&nbsp;
 
 ## Articles in Peer-reviewed Journals
 *indicates equal author contributions
@@ -60,6 +62,7 @@ cat(l, sep = "\n", file = here::here("bib", "journal.bib"))
 
 
 
+&nbsp;
 
 ## Working Papers under Revision or Review
 ```{r clean_working_papers, include=FALSE, warning = FALSE,  message=FALSE}
@@ -87,6 +90,7 @@ cat(l, sep = "\n", file = here::here("bib", "working_paper.bib"))
 
 \endgroup
 
+&nbsp;
 
 ## Articles in Peer-reviewed Conference Proceedings
 ```{r clean_proceedings, include=FALSE, warning = FALSE,  message=FALSE}

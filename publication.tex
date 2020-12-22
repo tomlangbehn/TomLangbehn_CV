@@ -72,6 +72,46 @@
 
 %------------------------------------------------------------------------------
 
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
 
 % Pandoc CSL macros
@@ -121,10 +161,120 @@
 \hypertarget{publications}{%
 \section{Publications}\label{publications}}
 
+\hypertarget{publications-track-record}{%
+\subsection{Publications track record}\label{publications-track-record}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(tidyverse)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## -- Attaching packages --------------------------------------- tidyverse 1.3.0 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.3.2     v purrr   0.3.4
+## v tibble  3.0.4     v dplyr   1.0.2
+## v tidyr   1.1.2     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.0
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(bib2df)}
+\CommentTok{#!> read jorunal articles from bib file}
+\NormalTok{bib_journal <-}\StringTok{ }\NormalTok{bib2df}\OperatorTok{::}\KeywordTok{bib2df}\NormalTok{(here}\OperatorTok{::}\KeywordTok{here}\NormalTok{(}\StringTok{"bib"}\NormalTok{, }\StringTok{"journal.bib"}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: `as_data_frame()` is deprecated as of tibble 2.0.0.
+## Please use `as_tibble()` instead.
+## The signature and semantics have changed, see `?as_tibble`.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_warnings()` to see where this warning was generated.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{bib_no_journal <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(bib_journal)}
+\CommentTok{#!> read proceedings articles from bib file}
+\NormalTok{bib_proceedings <-}\StringTok{ }\NormalTok{bib2df}\OperatorTok{::}\KeywordTok{bib2df}\NormalTok{(here}\OperatorTok{::}\KeywordTok{here}\NormalTok{(}\StringTok{"bib"}\NormalTok{, }\StringTok{"proceedings.bib"}\NormalTok{))}
+\NormalTok{bib_no_proceedings <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(bib_proceedings)}
+
+\NormalTok{total_pub <-}\StringTok{ }\NormalTok{bib_no_journal }\OperatorTok{+}\StringTok{ }\NormalTok{bib_no_proceedings}
+
+\KeywordTok{library}\NormalTok{(scholar)}
+\CommentTok{#!> access my scholar profile}
+\NormalTok{id <-}\StringTok{ 'upYmy0oAAAAJ&hl'}
+\NormalTok{profile <-}\StringTok{ }\KeywordTok{get_profile}\NormalTok{(id)}
+\CommentTok{#!> get my citation history}
+\NormalTok{ct <-}\StringTok{ }\KeywordTok{get_citation_history}\NormalTok{(id)}
+\CommentTok{#!> get my publications}
+\NormalTok{pubs <-}\StringTok{ }\KeywordTok{get_publications}\NormalTok{(id) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{as_tibble}\NormalTok{()}
+\NormalTok{no_pubs_scholar <-}\StringTok{ }\KeywordTok{nrow}\NormalTok{(pubs)}
+
+
+\CommentTok{#!> access date}
+\NormalTok{access_dttm <-}\StringTok{ }\KeywordTok{format}\NormalTok{(}\KeywordTok{Sys.time}\NormalTok{(), }\StringTok{"%d %b %Y"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+During my career I have published a \textbf{total number of 8
+peer-reviewed papers}. Thereof \textbf{7 publications in international
+peer-reviewed scientific journals} and \textbf{1 in peer-reviewed
+conference proceedings}. According to Google Scholar (as of 22 Dec 2020)
+these have been \textbf{cited a total of 79 times}, thereof \textbf{45
+times within 2020}. I have an \textbf{\emph{h-index} of 4}.
+
+~ ~
+
 \hypertarget{articles-in-peer-reviewed-journals}{%
 \subsection{Articles in Peer-reviewed
 Journals}\label{articles-in-peer-reviewed-journals}}
 
+*indicates equal author contributions
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
 \hypertarget{refs_journals}{}
+
+\endgroup
+
+\hypertarget{working-papers-under-revision-or-review}{%
+\subsection{Working Papers under Revision or
+Review}\label{working-papers-under-revision-or-review}}
+
+\emph{in. prep.} articles are only listed when ready to submit
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_working_paper}{}
+
+\endgroup
+
+\hypertarget{articles-in-peer-reviewed-conference-proceedings}{%
+\subsection{Articles in Peer-reviewed Conference
+Proceedings}\label{articles-in-peer-reviewed-conference-proceedings}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs_proceedings}{}
+
+\endgroup
 
 \end{document}

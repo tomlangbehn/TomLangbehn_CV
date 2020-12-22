@@ -1,4 +1,4 @@
-# Awards and Honors
+# Awards
 
 ```{r award}
 ezpickr::pick("data/award.xlsx") %>%
